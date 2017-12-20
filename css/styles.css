@@ -57,12 +57,10 @@ a {
   font-weight: 700;
 }
 
-a:hover {
-  color: #111;
-}
 
 header {
   padding-top: 10px;
+  margin-top: 5em;
 }
 
 header nav {
@@ -74,6 +72,107 @@ header nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
+
+/*---------Hover animation for logo-----------*/
+/*Paw rotation*/
+.paw {
+  transform-origin: 70.4px 69.9px;
+  transition: transform 1.23s cubic-bezier(.88,-0.39,.49,1.48);
+}
+
+.logo:hover .paw {
+  transform: rotate(360deg);
+}
+
+/*Keyframe*/
+@keyframes pulse {
+  0% {
+    transform: scale(1.05);
+    transition: transform ease-in-out;
+
+
+  }
+  100% {
+    transform: scale(1);
+    transition: transform ease-in-out;
+  }
+}
+
+/*Logo Print Pulse*/
+.logo-print {
+  transform-origin: 70.4px 69.9px;
+}
+
+/*.logo:hover .logo-print {
+  animation: pulse .3s 1.1s;
+  animation-delay: 1.1s;
+  transform-origin: 50% 50%;
+}*/
+
+.logo:hover .logo-print > :nth-child(1) {
+  animation: pulse .1s 1.05s;
+
+
+}
+
+.logo:hover .logo-print > :nth-child(2){
+  animation: pulse .1s 1.1s;
+
+}
+
+.logo:hover .logo-print > :nth-child(3){
+  animation: pulse .1s 1.15s;
+}
+
+.logo:hover .logo-print > :nth-child(4){
+  animation: pulse .1s 1.2s;
+}
+
+.logo:hover .logo-print > :nth-child(5){
+  animation: pulse .1s 1.25s;
+}
+
+.logo:hover .logo-print > :nth-child(6){
+  animation: pulse .1s 1.3s;
+}
+
+.logo:hover .logo-print > :nth-child(7){
+  animation: pulse .1s 1.35s;
+}
+
+.logo:hover .logo-print > :nth-child(8){
+  animation: pulse .1s 1.4s;
+}
+
+.logo:hover .logo-print > :nth-child(9){
+  animation: pulse .1s 1.45s;
+}
+
+.logo:hover .logo-print > :nth-child(10){
+  animation: pulse .1s 1.5s;
+}
+
+.logo:hover .logo-print > :nth-child(11){
+  animation: pulse .1s 1.55s;
+}
+
+.logo:hover .logo-print > :nth-child(12){
+  animation: pulse .1s 1.6s;
+}
+
+.logo:hover .logo-print > :nth-child(13){
+  animation: pulse .1s 1.65s;
+}
+
+.logo:hover .logo-print > :nth-child(14){
+  animation: pulse .1s 1.7s;
+}
+
+.logo:hover .logo-print > :nth-child(15){
+  animation: pulse .1s 1.75s;
+}
+
+/*End of hover animation*/
 
 main {
   padding-top: 50px;
@@ -88,4 +187,23 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+.logo-print-mobile {
+  display: none;
+}
+
+@media (max-width: 425px){
+  .logo-print {
+    display: none;
+  }
+  .logo-print-mobile {
+    display: block;
+    color: #eaaa7f;
+    font-size: 1.5em;
+  }
+
+  header {
+    margin-top: 3em;
+  }
 }
