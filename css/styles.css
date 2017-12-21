@@ -177,7 +177,7 @@ header nav ul li {
 /*Corgi logo styles*/
 
 .sable {
-  color: #a37a29
+  color: #a37a29;
 }
 
 .fawn {
@@ -192,8 +192,31 @@ header nav ul li {
   color: #737373;
 }
 
+.sable,
+.fawn,
+.stone,
+.red {
+  padding-bottom: 1em;
+}
 
 /*End Corgi logo styles*/
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.corgiMix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+h3 {
+  color: #f4c6a6;
+}
 
 main {
   padding-top: 50px;
