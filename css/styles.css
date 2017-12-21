@@ -176,14 +176,22 @@ header nav ul li {
 
 /*Corgi logo styles*/
 
+.sable {
+  color: #a37a29
+}
 
-.body {
-  fill: red;
+.fawn {
+  color:  #ffd9b3;
+}
+
+.red {
+  color: #804000;
 }
 
 .stone {
-  fill: green;
+  color: #737373;
 }
+
 
 /*End Corgi logo styles*/
 
