@@ -24,25 +24,46 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-
-
 }
 
 .nav > li {
-  padding: 0 1em;
+  padding: 1em;
+}
+
+/*Nav transitions*/
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+    transition: transform ease-in-out;
+  }
+
+  50% {
+    transform: scale(1.2);
+    transition: transform ease-in-out;
+  }
+  100%{
+    transform: scale(1);
+    transition: transform ease-in-out;
+  }
 }
 
 .nav li a,
 .nav-icon {
   transition: color .5s ease-in-out, fill .5s ease-in-out;
+
 }
 
-.nav li a:hover,
-.nav li:hover .nav-icon {
+.nav li:hover a,
+.nav li:hover .nav-icon,
+.nav li:hover {
   color: #ffa13e;
   fill: #ffa13e;
+  animation: zoomOut .5s;
+
 }
 
+/*End Nav transitions*/
 
 p {
   max-width: 350px;
