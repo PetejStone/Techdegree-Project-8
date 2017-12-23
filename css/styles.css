@@ -48,6 +48,7 @@ body {
   }
 }
 
+
 .nav li a,
 .nav-icon {
   transition: color .5s ease-in-out, fill .5s ease-in-out;
@@ -254,11 +255,29 @@ footer {
   color: #ba8058;
 }
 
+/*Media query changes */
+
 .logo-print-mobile {
   display: none;
 }
 
-@media (max-width: 425px){
+.logo-print {
+  display: none;
+}
+.logo-print-mobile {
+  display: block;
+  color: #eaaa7f;
+  font-size: 1.5em;
+}
+
+header {
+  margin-top: 3em;
+}
+}
+
+/*Media query changes*/
+
+
   .logo-print {
     display: none;
   }
@@ -271,4 +290,24 @@ footer {
   header {
     margin-top: 3em;
   }
+
+  .nav li a {
+    font-size: .82em;
+  }
+
+@media (min-width: 425px){
+  .logo-print {
+    display: block;
+  }
+  .logo-print-mobile {
+    display: none;
+  }
+
+  header {
+    margin-top: 5em;
+  }
+
+.nav li a {
+  font-size: 1em;
+ }
 }
